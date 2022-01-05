@@ -1,5 +1,5 @@
 from flask import Flask
-import numpu as np
+import numpy as np
 
 app = Flask(__name__)
 
