@@ -9,7 +9,8 @@ def hello_world():
 
 @app.route('/numpy')
 def randMatrix():
-    return np.random.rand(5,5)
+    x = np.random.rand(5,5)
+    return np.array2string(x, precision=2, separator=',', suppress_small=True)
 
 if __name__ == '__main__':
     app.run()
